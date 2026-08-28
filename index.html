@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
+
+    <title>My Music</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="player">
+
+    <!-- 专辑封面 -->
+    <div class="cover-container">
+        <img id="cover"
+             src="images/cover01.jpg"
+             alt="Album Cover">
+    </div>
+
+    <!-- 歌曲信息 -->
+    <div class="song-info">
+
+        <h1 id="title">
+            Song 01
+        </h1>
+
+        <p id="artist">
+            My Artist
+        </p>
+
+    </div>
+
+    <!-- 进度条 -->
+    <div class="progress-area">
+
+        <span id="current-time">
+            00:00
+        </span>
+
+        <input
+            type="range"
+            id="progress"
+            min="0"
+            max="100"
+            value="0">
+
+        <span id="duration">
+            00:00
+        </span>
+
+    </div>
+
+    <!-- 控制按钮 -->
+    <div class="controls">
+
+        <button id="prev">
+            ⏮
+        </button>
+
+        <button id="play"
+                class="play-button">
+            ▶
+        </button>
+
+        <button id="next">
+            ⏭
+        </button>
+
+    </div>
+
+    <!-- 音量 -->
+    <div class="volume">
+
+        <span>
+            🔊
+        </span>
+
+        <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1">
+
+    </div>
+
+    <!-- 播放列表 -->
+    <div class="playlist">
+
+        <h2>
+            Playlist
+        </h2>
+
+        <div id="playlist-container"></div>
+
+    </div>
+
+</div>
+
+<!-- HTML Audio -->
+<audio id="audio"></audio>
+
+<script src="js/player.js"></script>
+
+</body>
+</html>
