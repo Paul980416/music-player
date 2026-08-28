@@ -5,7 +5,7 @@
 const songs = [
 
     {
-        title: "核心旋转",
+        title: "Perfect",
         artist: "My Artist",
         src: "music/song01.mp3",
         cover: "images/cover01.jpg"
