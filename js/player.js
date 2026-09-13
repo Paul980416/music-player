@@ -6,7 +6,7 @@ const songs = [
 
     {
         title: "Perfect",
-        artist: "My Artist",
+        artist: "Salmon",
         src: "music/song01.mp3",
         cover: "images/cover01.jpg"
     },
